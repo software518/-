@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>刮刮乐</title>
+	<style type="text/css" media="screen">
+		*{
+			margin:0;
+			padding:0;
+		}
+		.contain{
+			position:relative;
+		}
+	</style>
+</head>
+<body>
+	<div class="contain">
+		<canvas id="scratcher" class="canvasName"></canvas>
+		<!-- <img src="img-gua.png" alt=""> -->
+	</div>
+</body>
+<script src="zepto.min.js" type="text/javascript"></script>
+<script src="scratcher1.5.js" type="text/javascript" charset="utf-8" async defer></script>
+<script type="text/javascript">
+	var data = [
+				{
+					coverImg:'img-gua.png',//外层遮罩
+					babyImg:'img-cover.png'//中间层
+				}
+			];
+		function scratcherChanged() {
+		    var per = (this.fullAmount(32) * 100)|0;
+		    if(per>0){
+				//交互代码
+		    }
+		}
+</script>
+</html>
